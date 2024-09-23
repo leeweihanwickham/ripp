@@ -61,6 +61,11 @@ path = "benches/uni_batch_kzg.rs"
 harness = false
 
 [[bench]]
+name = "biv_trivial_kzg"
+path = "benches/biv_trivial_kzg.rs"
+harness = false
+
+[[bench]]
 name = "groth16_aggregation"
 path = "benches/groth16_aggregation/bench.rs"
 harness = false

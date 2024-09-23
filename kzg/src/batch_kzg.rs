@@ -8,6 +8,7 @@ use ark_ff::{One, UniformRand, Zero, PrimeField};
 use ark_poly::polynomial::{
     univariate::DensePolynomial as UnivariatePolynomial, DenseUVPolynomial, Polynomial,
 };
+use merlin::Transcript;
 
 use std::marker::PhantomData;
 

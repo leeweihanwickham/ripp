@@ -28,6 +28,7 @@ csv = "1"
 ark-inner-products = { path = "../inner_products" }
 ark-ip-proofs = { path = "../ip_proofs" }
 ark-dh-commitments = { path = "../dh_commitments" }
+my_kzg = {path = "../kzg"}
 
 [[bench]]
 name = "inner_products"
@@ -47,6 +48,16 @@ harness = false
 [[bench]]
 name = "poly_commit"
 path = "benches/poly_commit.rs"
+harness = false
+
+[[bench]]
+name = "trivial_kzg"
+path = "benches/trivial_kzg_test.rs"
+harness = false
+
+[[bench]]
+name = "uni_batch_kzg"
+path = "benches/uni_batch_kzg.rs"
 harness = false
 
 [[bench]]

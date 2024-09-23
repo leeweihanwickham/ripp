@@ -48,7 +48,7 @@ fn main() {
     let mut start;
     let mut time;
 
-    for degree in (0..num_data_points).map(|i| 4_usize.pow((i + 1) as u32) - 1) {
+    for degree in (4..=num_data_points).map(|i| 4_usize.pow((i + 1) as u32) - 1) {
         // Benchmark KZG
         {
             let mut rng = StdRng::seed_from_u64(0u64);
